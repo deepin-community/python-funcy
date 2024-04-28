@@ -1,5 +1,49 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-funcy (2.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Upload to unstable
+  * [071ceb7] d/control: Add Built-Using to -doc package
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sat, 17 Jun 2023 12:47:44 +0200
+
+python-funcy (2.0-1) experimental; urgency=medium
+
+  * [76602f8] d/gbp.conf: Filter out potential diff rubish
+  * [6535d1a] New upstream version 2.0
+  * [243d430] d/rules: Drop PYBUILD_SYSTEM=distutils
+  * [39694b4] d/README.source: Add info about upstream tests
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 02 Apr 2023 19:58:31 +0200
+
+python-funcy (1.18-1) unstable; urgency=medium
+
+  * [5321b73] New upstream version 1.18
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 05 Feb 2023 12:20:02 +0100
+
+python-funcy (1.17-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * [d38e3fc] Apply multi-arch hints. + python-funcy-doc: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 27 Nov 2022 14:09:39 +0000
+
+python-funcy (1.17-1) unstable; urgency=medium
+
+  * [53ceecc] New upstream version 1.17
+  * [3c56359] Drop patch queue
+  * [f5a3e65] d/control: Remove obsolet Testsuite entry
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Thu, 23 Dec 2021 20:00:52 +0100
+
+python-funcy (1.16-1) unstable; urgency=medium
+
+  * [a6a7d95] d/control: Update Standards-Version to 4.6.0
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sat, 02 Oct 2021 10:13:59 +0200
+
+python-funcy (1.16-1~exp1) experimental; urgency=medium
+
+  * [3f0421c] New upstream version 1.16
+  * [3a95adc] First and basic Debianization (Closes: #989811)
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Mon, 14 Jun 2021 20:07:58 +0200
