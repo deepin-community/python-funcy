@@ -1,4 +1,21 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+#export DH_VERBOSE = 1
+
+include /usr/share/dpkg/pkg-info.mk
+
+BUILD_DATE  = $(shell LC_ALL=C date -u "+%d %B %Y" -d "@$(SOURCE_DATE_EPOCH)")
+SPHINXOPTS := -E -N -D html_last_updated_fmt="$(BUILD_DATE)"
+
+export PYBUILD_NAME=funcy
+export PYBUILD_DISABLE=test
 
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild
+
+override_dh_sphinxdoc:
+ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
+	PYTHONPATH=. python3 -m sphinx -b html $(SPHINXOPTS) docs/ $(CURDIR)/debian/python-funcy-doc/usr/share/doc/python-funcy-doc/html
+	dh_sphinxdoc
+endif

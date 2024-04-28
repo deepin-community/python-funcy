@@ -1,0 +1,9 @@
+Document: python-funcy-doc
+Title: Python funcy Documentation
+Abstract: This is the documentation of Python funcy,
+ a collection of fancy functional tools focused on practicality
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-funcy-doc/html/index.html
+Files: /usr/share/doc/python-funcy-doc/html/*.html
